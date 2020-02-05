@@ -2,7 +2,7 @@
 @section('title', 'Create Post')
     <div class="row">
         <div class="col-sm-12" style="text-align:center; margin-top:20px">
-                
+
             <div class="pull-left">
                 <h1 style="color:red">Create Post</h1>
                 <hr style="width:600px">
@@ -26,7 +26,7 @@
 	</div>
     <div class="container jumbotron " style="margin-top:30px; width: 800px; border-radius: 30px;
     box-shadow:  2px 2px 2px 2px gray;">
-        
+
         <a href="{{route('database')}}" class="btn btn-primary float-right">View Posts</a>
     <div class="row">
         <div class="col-sm-8 col-md-8 offset-sm-2">
@@ -37,7 +37,7 @@
                 @endif
             <form action="{{('store')}}" method = "post">
                 @csrf
-            <div class="form-group">  
+            <div class="form-group">
                 <input type="text" name="name" id="name" placeholder="Enter Your Name" class="form-control" required>
             </div>
         </div>
@@ -52,12 +52,12 @@
             </div>
         </div>
         <div class="col-sm-8 offset-sm-2">
-            
+
             <button type="submit" class="btn btn-primary" name="button">Submit</button>
             <a class="small" style="color:red" href="{{route('logout')}}">Logout</a>
         </div>
-        
+
         </form>
     </div>
 </div>
-@section('content')
+@endsection('content')
